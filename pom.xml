@@ -29,15 +29,6 @@
 		<url>https://github.com/fuinorg/javafx-cdi-archetype/issues</url>
 	</issueManagement>
 
-	<licenses>
-		<license>
-			<name>APACHE_V2</name>
-			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
-			<distribution>repo</distribution>
-			<comments>Apache License version 2.0</comments>
-		</license>
-	</licenses>
-
 	<build>
 
 		<extensions>
