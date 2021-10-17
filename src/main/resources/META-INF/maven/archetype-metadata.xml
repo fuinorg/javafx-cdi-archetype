@@ -228,6 +228,12 @@
 				<include>settings.xml</include>
 			</includes>
 		</fileSet>
+				<fileSet filtered="true">
+			<directory></directory>
+			<includes>
+				<include>README.md</include>
+			</includes>
+		</fileSet>
 						<fileSet filtered="false">
 			<directory></directory>
 			<includes>
