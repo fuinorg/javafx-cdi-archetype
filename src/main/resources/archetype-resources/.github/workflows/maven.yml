@@ -43,5 +43,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: app
-        path: ${symbol_dollar}{{ github.workspace }}/example/target/${hyphenName}-0.1.0-SNAPSHOT-bin.zip
+        path: ${symbol_dollar}{{ github.workspace }}/example/target/${hyphenName}-0.2.0-SNAPSHOT-bin.zip
         retention-days: 7t
