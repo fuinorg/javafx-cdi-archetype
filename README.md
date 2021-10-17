@@ -17,7 +17,7 @@ Use this archetype to bootstrap your own project based on the [javafx-cdi-exampl
 mvn archetype:generate \
      -DarchetypeGroupId=org.fuin.archetypes \
      -DarchetypeArtifactId=javafx-cdi-archetype \
-     -DarchetypeVersion=0.1.0-SNAPSHOT
+     -DarchetypeVersion=0.1.0
 ```
 
 ### All Parameters
@@ -25,7 +25,7 @@ mvn archetype:generate \
 mvn archetype:generate \
     -DarchetypeGroupId=org.fuin.archetypes \
     -DarchetypeArtifactId=javafx-cdi-archetype \
-    -DarchetypeVersion=0.1.0-SNAPSHOT \
+    -DarchetypeVersion=0.1.0 \
     -DgroupId="com.mycompany" \
     -DartifactId="myapp" \
     -Dversion="0.1.0-SNAPSHOT" \
@@ -38,9 +38,9 @@ mvn archetype:generate \
 **Explanation**
 <table border="1" style="font-size:0.9em; text-align:left; vertical-align:top; padding-top:5px; padding-bottom:4px;">
 <tr><th>Parameter</th><th>Default Value</th><th>Description</th></tr>
-<tr><td>groupId</td><td>com.mycompany</td><td>Maven 'groupId'</td></tr>
-<tr><td>artifactId</td><td>myapp</td><td>Maven 'artifactId'</td></tr>
-<tr><td>version</td><td>0.1.0-SNAPSHOT</td><td>Maven 'version'</td></tr>
+<tr><td>groupId</td><td>com.mycompany</td><td>Maven 'groupId' of your application</td></tr>
+<tr><td>artifactId</td><td>myapp</td><td>Maven 'artifactId' of your application</td></tr>
+<tr><td>version</td><td>0.1.0-SNAPSHOT</td><td>Maven 'version' of your application</td></tr>
 <tr><td>packagePath</td><td>com/mycompany/myapp</td><td>The base Java package as path</td></tr>
 <tr><td>description</td><td>My cool application</td><td>A brief description of your application</td></tr>
 <tr><td>hyphenName</td><td>my-cool-app</td><td>A short name for your application. Only lower case characters 'a'-'z' and '-' are allowed.</td></tr>
