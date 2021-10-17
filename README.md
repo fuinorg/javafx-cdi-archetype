@@ -1,8 +1,9 @@
 # javafx-cdi-archetype
 JavaFX with CDI Archetype
 
+![Build](https://github.com/fuinorg/docs/actions/workflows/maven.yml/badge.svg)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.fuin.archetypes/javafx-cdi-archetype/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.fuin.archetypes/javafx-cdi-archetype/)
-[![Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![LGPLv3 License](http://img.shields.io/badge/license-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl.html)
 [![Java Development Kit 11](https://img.shields.io/badge/JDK-11-green.svg)](https://openjdk.java.net/projects/jdk/11/)
 
 Use this archetype to bootstrap your own project based on the [javafx-cdi-example](https://github.com/fuinorg/javafx-cdi-example).
