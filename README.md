@@ -10,6 +10,8 @@ Use this archetype to bootstrap your own project based on the [javafx-cdi-exampl
 
 > :warning: There is currently a bug with the `.gitignore` during archetype generation. You need to manually copy the provided [](archetype/src/main/resources/archetype-resources/.gitignore) to the root of the newly generated project.
 
+## Generate your project
+
 ### Mandatory Parameters
 ```
 mvn archetype:generate \
@@ -44,3 +46,25 @@ mvn archetype:generate \
 <tr><td>hyphenName</td><td>my-cool-app</td><td>A short name for your application. Only lower case characters 'a'-'z' and '-' are allowed.</td></tr>
 <tr><td>mainName</td><td>MyCoolApp</td><td>The main class name of your application. Must be a valid Java class name. Most likely the 'hyphenName' as Camel Case.</td></tr>
 </table>
+
+* * *
+
+## Snapshots
+
+Snapshots of this archetype can be found in the **OSS Sonatype Snapshots Repository**. 
+
+Add the following to your .m2/settings.xml to enable snapshots in your Maven build:
+
+```xml
+<repository>
+    <id>sonatype.oss.snapshots</id>
+    <name>Sonatype OSS Snapshot Repository</name>
+    <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+    <releases>
+        <enabled>false</enabled>
+    </releases>
+    <snapshots>
+        <enabled>true</enabled>
+    </snapshots>
+</repository>
+```
