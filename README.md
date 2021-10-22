@@ -29,7 +29,7 @@ mvn archetype:generate \
     -DgroupId="com.mycompany" \
     -DartifactId="myapp" \
     -Dversion="0.1.0-SNAPSHOT" \
-    -DpackagePath="com/mycompany/myapp" \
+    -DpkgPath="com/mycompany/myapp" \
     -Ddescription="My cool application" \
     -DhyphenName="my-cool-app" \
     -DmainName="MyCoolApp"
