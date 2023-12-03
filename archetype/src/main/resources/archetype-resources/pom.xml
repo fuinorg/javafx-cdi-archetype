@@ -13,7 +13,7 @@
 
     <groupId>${pkgName}</groupId>
     <artifactId>${artifactId}</artifactId>
-    <version>${version}</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>${description} (Parent)</description>
 
