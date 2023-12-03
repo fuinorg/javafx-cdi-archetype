@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="org.fuin.archetypes.javafx-cdi-archetype">
+
+	<requiredProperties>
+		<requiredProperty key="groupId"><defaultValue>com.mycompany</defaultValue></requiredProperty>
+		<requiredProperty key="artifactId"><defaultValue>myapp</defaultValue></requiredProperty>
+		<requiredProperty key="version"><defaultValue>0.1.0-SNAPSHOT</defaultValue></requiredProperty>
+		<requiredProperty key="pkgPath"><defaultValue>com/mycompany/myapp</defaultValue></requiredProperty>
+		<requiredProperty key="description"><defaultValue>My cool application</defaultValue></requiredProperty>
+		<requiredProperty key="hyphenName"><defaultValue>my-cool-app</defaultValue></requiredProperty>
+		<requiredProperty key="mainName"><defaultValue>MyCoolApp</defaultValue></requiredProperty>
+	</requiredProperties>
+
+	<fileSets>	    
+		<fileSet filtered="true">
+			<directory>.github/workflows</directory>
+			<includes>
+				<include>maven.yml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>.mvn/wrapper</directory>
+			<includes>
+				<include>maven-wrapper.properties</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app</directory>
+			<includes>
+				<include>pom.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/app</directory>
+			<includes>
+				<include>__hyphenName__.bat</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/app</directory>
+			<includes>
+				<include>__hyphenName__.sh</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/assembly</directory>
+			<includes>
+				<include>assembly.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/app</directory>
+			<includes>
+				<include>ChildController.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/app</directory>
+			<includes>
+				<include>FxUtils.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/app</directory>
+			<includes>
+				<include>__mainName__.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/app</directory>
+			<includes>
+				<include>__mainName__Controller.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/app</directory>
+			<includes>
+				<include>__mainName__Loader.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/app</directory>
+			<includes>
+				<include>LongRunningTaskExample.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>AbstractInterceptor.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>BootstrapBean.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>ChildController.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>HostServicesBean.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>InitializationException.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>Loggable.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>LoggerProducer.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>LoggingInterceptor.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>MessageDisplay.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>Preferences.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/common</directory>
+			<includes>
+				<include>ProgressUI.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/controls</directory>
+			<includes>
+				<include>AboutAlert.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/controls</directory>
+			<includes>
+				<include>ExceptionAlert.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/controls</directory>
+			<includes>
+				<include>NodeControllerPair.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/controls</directory>
+			<includes>
+				<include>StackPaneProgressUI.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/java/__pkgPath__/controls</directory>
+			<includes>
+				<include>TextAreaMessageDisplay.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/resources/META-INF</directory>
+			<includes>
+				<include>beans.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/resources/__pkgPath__/app</directory>
+			<includes>
+				<include>ChildController.fxml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/resources/__pkgPath__/app</directory>
+			<includes>
+				<include>ChildController.properties</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/resources/__pkgPath__/app</directory>
+			<includes>
+				<include>__mainName__Controller.fxml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/resources/__pkgPath__/app</directory>
+			<includes>
+				<include>__mainName__Controller.properties</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/resources/__pkgPath__/controls</directory>
+			<includes>
+				<include>AboutAlert.properties</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/resources/__pkgPath__/controls</directory>
+			<includes>
+				<include>ExceptionAlert.properties</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>app/src/main/resources</directory>
+			<includes>
+				<include>template-logback.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory></directory>
+			<includes>
+				<include>LICENSE.txt</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory></directory>
+			<includes>
+				<include>pom.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory></directory>
+			<includes>
+				<include>README.md</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory></directory>
+			<includes>
+				<include>settings.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>test</directory>
+			<includes>
+				<include>pom.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>test/src/main/resources/META-INF</directory>
+			<includes>
+				<include>beans.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true">
+			<directory>test/src/test/java/__pkgPath__/test</directory>
+			<includes>
+				<include>__mainName__Test.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory></directory>
+			<includes>
+				<include>_.gitignore</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory>.mvn</directory>
+			<includes>
+				<include>_.gitkeep</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory>.mvn/wrapper</directory>
+			<includes>
+				<include>maven-wrapper.jar</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory></directory>
+			<includes>
+				<include>mvnw</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory></directory>
+			<includes>
+				<include>mvnw.cmd</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+
+</archetype-descriptor>

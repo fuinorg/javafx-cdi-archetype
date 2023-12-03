@@ -1,9 +1,11 @@
 <marchetyper-config
-        src-dir="../example"
-        dest-dir="./target/javafx-cdi-archetype"
-        binary-files=".*\.(jar|gitignore|gitkeep|png)"
-        text-files="(.*\.(properties|md|java|cli|sh|bat|yml|xml|fxml))|Dockerfile"
-        test="true">
+        src-dir="../javafx-cdi-example"
+        dest-dir="../archetype"
+        binary-files=".*\.(jar|gitignore|gitkeep|png|cmd)|mvnw"
+        text-files="(.*\.(properties|md|java|cli|sh|bat|yml|xml|fxml|txt))|Dockerfile"
+        test="true"
+        post-generate-file="extra-resources/archetype-post-generate.groovy"
+        mask-dot-file="true">
 
     <archetype group-id="org.fuin.archetypes" artifact-id="javafx-cdi-archetype" version="0.1.0-SNAPSHOT">
         <property name="groupId" default="com.mycompany" test="org.fuin.examples.javafxcdi" />
@@ -31,6 +33,7 @@
 
         <mapping search="&lt;groupId&gt;org.fuin.examples.javafx&lt;/groupId&gt;" replace="&lt;groupId&gt;${groupId}&lt;/groupId&gt;" file="pom\.xml" />
         <mapping search="&lt;artifactId&gt;javafx-cdi-example&lt;/artifactId&gt;" replace="&lt;artifactId&gt;${artifactId}&lt;/artifactId&gt;" file="pom\.xml" />
+        <mapping search="&lt;version&gt;0.1.0-SNAPSHOT&lt;/version&gt;" replace="&lt;version&gt;${version}&lt;/version&gt;" file="pom\.xml" />
         <mapping search="&lt;description&gt;JavaFX with CDI Example (Code)&lt;/description&gt;" replace="&lt;description&gt;${description}&lt;/description&gt;" file="pom\.xml" />
         <mapping search="&lt;Automatic-Module-Name&gt;org.fuin.examples.javafxcdi&lt;/Automatic-Module-Name&gt;" replace="&lt;Automatic-Module-Name&gt;${pkgName}&lt;/Automatic-Module-Name&gt;" file="pom\.xml" />
 

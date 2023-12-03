@@ -25,7 +25,7 @@ public class ArchetypeGenerationTest {
         final File baseDir = new File("..");
         final File configFile = new File(baseDir, "marchetyper/marchetyper-config.xml");
         final Config config = ConfigImpl.load(configFile);
-        final File srcDir = new File(baseDir, "example");
+        final File srcDir = new File(baseDir, "javafx-cdi-example");
         final File tmpDir = new File("target/" + this.getClass().getSimpleName());
         if (tmpDir.exists()) {
             FileUtils.deleteDirectory(tmpDir);
