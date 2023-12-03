@@ -4,6 +4,7 @@
         binary-files=".*\.(jar|gitignore|gitkeep|png|cmd)|mvnw"
         text-files="(.*\.(properties|md|java|cli|sh|bat|yml|xml|fxml|txt))|Dockerfile"
         test="true"
+        custom-pom-file="extra-resources/custom-pom.xml"
         post-generate-file="extra-resources/archetype-post-generate.groovy"
         mask-dot-file="true">
 
