@@ -4,8 +4,8 @@
         binary-files=".*\.(jar|gitignore|gitkeep|png|cmd)|mvnw"
         text-files="(.*\.(properties|md|java|cli|sh|bat|yml|xml|fxml|txt))|Dockerfile"
         test="true"
-        custom-pom-file="extra-resources/custom-pom.xml"
-        post-generate-file="extra-resources/archetype-post-generate.groovy"
+        custom-pom-file="custom-pom.xml"
+        post-generate-file="archetype-post-generate.groovy"
         mask-dot-file="true">
 
     <archetype group-id="org.fuin.archetypes" artifact-id="javafx-cdi-archetype" version="0.1.0-SNAPSHOT">
