@@ -54,7 +54,8 @@
 
     <!-- Directories and files that will not be copied -->
     <file-excludes>
-        <filter path=".*/images/.*" />
+        <filter path=".*/javafx-cdi-example/images/.*" />
+        <filter path=".*/javafx-cdi-example/README\.md" />
         <filter path=".*/target/.*" />
         <filter path=".*/\..*/.*"/>
         <filter file="^\..*" />

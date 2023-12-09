@@ -243,12 +243,6 @@
 		<fileSet filtered="true">
 			<directory></directory>
 			<includes>
-				<include>README.md</include>
-			</includes>
-		</fileSet>
-		<fileSet filtered="true">
-			<directory></directory>
-			<includes>
 				<include>settings.xml</include>
 			</includes>
 		</fileSet>
@@ -286,6 +280,36 @@
 			<directory>.mvn/wrapper</directory>
 			<includes>
 				<include>maven-wrapper.jar</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory>app/src/main/resources/images</directory>
+			<includes>
+				<include>__hyphenName__-128x128.png</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory>app/src/main/resources/images</directory>
+			<includes>
+				<include>__hyphenName__-16x16.png</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory>app/src/main/resources/images</directory>
+			<includes>
+				<include>__hyphenName__-32x32.png</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory>app/src/main/resources/images</directory>
+			<includes>
+				<include>__hyphenName__-48x48.png</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="false">
+			<directory>app/src/main/resources/images</directory>
+			<includes>
+				<include>__hyphenName__-64x64.png</include>
 			</includes>
 		</fileSet>
 		<fileSet filtered="false">

@@ -4,6 +4,8 @@ Archetype that creates a new JavaFX CDI Example Application Maven project.
 ## Generate
 
 ### Mandatory Parameters
+
+#### Linux
 ```
 mvn archetype:generate \
      -DarchetypeGroupId=org.fuin.archetypes \
@@ -11,7 +13,14 @@ mvn archetype:generate \
      -DarchetypeVersion=0.2.0-SNAPSHOT
 ```
 
+#### Windows
+```
+mvn archetype:generate "-DarchetypeGroupId=org.fuin.archetypes" "-DarchetypeArtifactId=javafx-cdi-archetype" "-DarchetypeVersion=0.2.0-SNAPSHOT"
+```
+
 ### All Parameters
+
+#### Linux
 ```
 mvn archetype:generate \
      -DarchetypeGroupId=org.fuin.archetypes \
@@ -22,6 +31,11 @@ mvn archetype:generate \
      -Dversion="0.2.0-SNAPSHOT" \
      -DpkgName="com.mycompany.myapp" \
      -DappName="MyCoolApp"
+```
+
+#### Windows
+```
+mvn archetype:generate "-DarchetypeGroupId=org.fuin.archetypes" "-DarchetypeArtifactId=javafx-cdi-archetype" "-DarchetypeVersion=0.2.0-SNAPSHOT" "-DgroupId=com.mycompany" "-DartifactId=myapp" "-Dversion=0.2.0-SNAPSHOT" "-DpkgName=com.mycompany.myapp" "-DappName=MyCoolApp"
 ```
 
 ### Explanation
