@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>${pkgName}</groupId>
 		<artifactId>${artifactId}</artifactId>
-		<version>0.2.0-SNAPSHOT</version>
+		<version>${version}</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -36,7 +36,7 @@
 		<dependency>
 			<groupId>${pkgName}</groupId>
 			<artifactId>${hyphenName}-app</artifactId>
-			<version>0.2.0-SNAPSHOT</version>
+			<version>${version}</version>
 		</dependency>
 
 		<dependency>
@@ -94,6 +94,7 @@
 					<release>${symbol_dollar}{java.version}</release>
 				</configuration>
 			</plugin>
+
 		</plugins>
 
 	</build>

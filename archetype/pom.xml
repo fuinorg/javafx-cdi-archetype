@@ -9,11 +9,12 @@
         <groupId>org.fuin</groupId>
         <artifactId>pom</artifactId>
         <version>1.8.0</version>
+        <relativePath />
     </parent>
 
     <groupId>org.fuin.archetypes</groupId>
     <artifactId>javafx-cdi-archetype</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
     <scm>

@@ -9,6 +9,7 @@
         <groupId>org.fuin</groupId>
         <artifactId>pom</artifactId>
         <version>1.8.0</version>
+        <relativePath />
     </parent>
 
     <groupId>org.fuin.archetypes</groupId>

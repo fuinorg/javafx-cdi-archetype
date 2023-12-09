@@ -28,6 +28,7 @@ This example has the following features included:
 * [Blocking UI during task execution](${symbol_pound}blocking-ui-during-task-execution)
 * [About dialog showing a version](${symbol_pound}about-dialog-showing-a-version)
 * [Catching unexpected exceptions showing a dialog](${symbol_pound}catching-unexpected-exceptions-showing-a-dialog)
+* [UI test with TestFX](${symbol_pound}ui-test-with-testfx)
 * [Maven Archetype](${symbol_pound}maven-archetype)
 
 ${symbol_pound}${symbol_pound}${symbol_pound} Based on Java 17 with JavaFX 21
@@ -99,6 +100,9 @@ ${symbol_pound}${symbol_pound}${symbol_pound} Catching unexpected exceptions sho
 Sometimes your application will fail and throw an exception. It's a good idea to show something useful to the user (See [ExceptionAlert](src/main/java/org/fuin/examples/javafxcdi/controls/ExceptionAlert.java)).
 
 <a href="images/exception-dialog.png"><img src="https://github.com/fuinorg/${hyphenName}/raw/main/images/exception-dialog.png" width="291" height="118"></a>
+
+${symbol_pound}${symbol_pound}${symbol_pound} UI test with TestFX
+Example UI test with TestFX: [${mainName}Test.java](test/src/test/java/org/fuin/examples/javafxcdi/test/${mainName}Test.java)
 
 ${symbol_pound}${symbol_pound}${symbol_pound} Maven Archetype
 There is a [Maven Archetype](https://github.com/fuinorg/javafx-cdi-archetype) available that helps kickstarting your own project based on this code.
