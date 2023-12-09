@@ -8,10 +8,10 @@
         post-generate-file="archetype-post-generate.groovy"
         mask-dot-file="true">
 
-    <archetype group-id="org.fuin.archetypes" artifact-id="javafx-cdi-archetype" version="0.2.0-SNAPSHOT">
+    <archetype group-id="org.fuin.archetypes" artifact-id="javafx-cdi-archetype" version="0.2.0">
         <property name="groupId" default="com.mycompany" test="org.fuin.examples.javafxcdi" />
         <property name="artifactId" default="myapp" test="javafx-cdi-example" />
-        <property name="version" default="0.1.0-SNAPSHOT" test="0.2.0-SNAPSHOT" />
+        <property name="version" default="0.1.0-SNAPSHOT" test="0.2.0" />
         <property name="pkgPath" default="com/mycompany/myapp" test="org/fuin/examples/javafxcdi" />
         <property name="description" default="My cool application" test="JavaFX with CDI Example" />
         <property name="hyphenName" default="my-cool-app" test="javafx-cdi-example" />
@@ -34,7 +34,7 @@
 
         <mapping search="&lt;groupId&gt;org.fuin.examples.javafx&lt;/groupId&gt;" replace="&lt;groupId&gt;${groupId}&lt;/groupId&gt;" file="pom\.xml" />
         <mapping search="&lt;artifactId&gt;javafx-cdi-example&lt;/artifactId&gt;" replace="&lt;artifactId&gt;${artifactId}&lt;/artifactId&gt;" file="pom\.xml" />
-        <mapping search="&lt;version&gt;0.2.0-SNAPSHOT&lt;/version&gt;" replace="&lt;version&gt;${version}&lt;/version&gt;" file="pom\.xml" />
+        <mapping search="&lt;version&gt;0.2.0&lt;/version&gt;" replace="&lt;version&gt;${version}&lt;/version&gt;" file="pom\.xml" />
         <mapping search="&lt;description&gt;JavaFX with CDI Example (Code)&lt;/description&gt;" replace="&lt;description&gt;${description}&lt;/description&gt;" file="pom\.xml" />
         <mapping search="&lt;Automatic-Module-Name&gt;org.fuin.examples.javafxcdi&lt;/Automatic-Module-Name&gt;" replace="&lt;Automatic-Module-Name&gt;${pkgName}&lt;/Automatic-Module-Name&gt;" file="pom\.xml" />
 

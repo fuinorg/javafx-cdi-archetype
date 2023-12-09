@@ -1,6 +1,11 @@
 # javafx-cdi-archetype
 Generates the JavaFX CDI Example Application Archetype.
 
+[![maven-build](https://github.com/fuinorg/javafx-cdi-archetype/actions/workflows/maven.yml/badge.svg)](https://github.com/fuinorg/javafx-cdi-archetype/actions/workflows/maven.yml)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.fuin/javafx-cdi-archetype/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.fuin/javafx-cdi-archetype/)
+[![LGPLv3 License](http://img.shields.io/badge/license-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl.html)
+[![Java Development Kit 17](https://img.shields.io/badge/JDK-17-green.svg)](https://openjdk.java.net/projects/jdk/17/)
+
 ## Usage
 See detailed description on how to use it: [archetype](archetype).
 

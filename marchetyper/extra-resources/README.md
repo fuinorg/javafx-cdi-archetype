@@ -10,12 +10,12 @@ Archetype that creates a new JavaFX CDI Example Application Maven project.
 mvn archetype:generate \
      -DarchetypeGroupId=org.fuin.archetypes \
      -DarchetypeArtifactId=javafx-cdi-archetype \
-     -DarchetypeVersion=0.2.0-SNAPSHOT
+     -DarchetypeVersion=0.2.0
 ```
 
 #### Windows
 ```
-mvn archetype:generate "-DarchetypeGroupId=org.fuin.archetypes" "-DarchetypeArtifactId=javafx-cdi-archetype" "-DarchetypeVersion=0.2.0-SNAPSHOT"
+mvn archetype:generate "-DarchetypeGroupId=org.fuin.archetypes" "-DarchetypeArtifactId=javafx-cdi-archetype" "-DarchetypeVersion=0.2.0"
 ```
 
 ### All Parameters
@@ -25,17 +25,17 @@ mvn archetype:generate "-DarchetypeGroupId=org.fuin.archetypes" "-DarchetypeArti
 mvn archetype:generate \
      -DarchetypeGroupId=org.fuin.archetypes \
      -DarchetypeArtifactId=javafx-cdi-archetype \
-     -DarchetypeVersion=0.2.0-SNAPSHOT \
+     -DarchetypeVersion=0.2.0 \
      -DgroupId="com.mycompany" \
      -DartifactId="myapp" \
-     -Dversion="0.2.0-SNAPSHOT" \
+     -Dversion="0.2.0" \
      -DpkgName="com.mycompany.myapp" \
      -DappName="MyCoolApp"
 ```
 
 #### Windows
 ```
-mvn archetype:generate "-DarchetypeGroupId=org.fuin.archetypes" "-DarchetypeArtifactId=javafx-cdi-archetype" "-DarchetypeVersion=0.2.0-SNAPSHOT" "-DgroupId=com.mycompany" "-DartifactId=myapp" "-Dversion=0.2.0-SNAPSHOT" "-DpkgName=com.mycompany.myapp" "-DappName=MyCoolApp"
+mvn archetype:generate "-DarchetypeGroupId=org.fuin.archetypes" "-DarchetypeArtifactId=javafx-cdi-archetype" "-DarchetypeVersion=0.2.0" "-DgroupId=com.mycompany" "-DartifactId=myapp" "-Dversion=0.2.0" "-DpkgName=com.mycompany.myapp" "-DappName=MyCoolApp"
 ```
 
 ### Explanation
@@ -54,7 +54,7 @@ In case you're developing a new version of this archetype, and you want to build
 mvn archetype:generate \
      -DarchetypeGroupId=org.fuin.archetypes \
      -DarchetypeArtifactId=javafx-cdi-archetype \
-     -DarchetypeVersion=0.2.0-SNAPSHOT \
+     -DarchetypeVersion=0.2.0 \
      ...
      -DarchetypeCatalog=local
 ```
