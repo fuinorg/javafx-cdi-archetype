@@ -1,5 +1,7 @@
 .*
-!/.gitignore
-!*.gitkeep
+!.gitignore
+!.gitkeep
+!.mvn
 !.github
+!.gitmodules
 target

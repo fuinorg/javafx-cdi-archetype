@@ -1,0 +1,57 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+#set( $delim = '.,_-/' )
+#set( $empty = '' )
+#set( $StringUtils = $empty.class.forName('org.codehaus.plexus.util.StringUtils') )
+#set( $pkgName = $StringUtils.replace($pkgPath, "/", ".") )
+name: Java Maven Build
+
+on:
+  push:
+    branches: 
+      - '**'
+    paths-ignore:
+      - '**/README.md'
+  pull_request:
+    branches:
+      - '**'
+    paths-ignore:
+      - '**/README.md'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'zulu'
+        cache: maven
+
+    - name: Show versions
+      run: java -version && ./mvnw -version && gpg --version
+
+    - name: Cache Maven packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2
+        key: ${symbol_dollar}{{ runner.os }}-m2-${symbol_dollar}{{ hashFiles('**/pom.xml') }}
+        restore-keys: ${symbol_dollar}{{ runner.os }}-m2
+
+    - name: Prepare headless run
+      run: |
+        echo "-Djava.awt.headless=true -Dtestfx.robot=glass -Dtestfx.headless=true -Dprism.order=sw -Dprism.text=t2k -Dtestfx.setup.timeout=2500" >> ${symbol_dollar}{{ github.workspace }}/.mvn/jvm.config
+    
+    - name: Build and run test
+      uses: coactions/setup-xvfb@v1
+      with:
+         run: ./mvnw clean package -U -B --file pom.xml -s settings.xml
